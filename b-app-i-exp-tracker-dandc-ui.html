@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Debit & Credit Tracker UI</title>
+  <link rel="stylesheet" href="bank-app-income-expense-tracker-style4biv.css" />
+</head>
+<body>
+  <div id="app-window">
+    <h1>🦅 Esotu Debit & Credit Tracker</h1>
+    <h2>Balance: ₦<span id="balance">0.00</span></h2>
+
+    <form id="ui-only-form">
+      <input type="text" placeholder="Transaction name" />
+      
+      <input type="number" placeholder="Price per unit (₦)" />
+      
+      <input type="number" placeholder="Weight" />
+      <select>
+        <option>kg</option>
+        <option>g</option>
+        <option>lb</option>
+      </select>
+
+      <select>
+        <option>Debit</option>
+        <option>Credit</option>
+      </select>
+
+      <input type="number" placeholder="Amount to record (₦)" />
+      <button>Add Transaction</button>
+    </form>
+
+    <div id="output-area">
+      <h3>Transaction History</h3>
+      <ul id="history-list">
+        <li class="income">Salary: ₦10,000 recorded as Debit</li>
+        <li class="expense">Fuel: ₦2,000 recorded as Credit</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
